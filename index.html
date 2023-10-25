@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance Esthetics Home</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="index.html">
+                <img src="images/shopping-bag.png" alt="site icon">
+                <span class="text-uppercase fw-lighter ms-2">AestX</span>
+            </a>
+
+            <div class="order-lg-2 nav-btns">
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-heart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#header">home</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#collection">collection</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#special">specials</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#blogs">blogs</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#about">about us</a>
+                    </li>
+                    <li class="nav-item px-2 py-2 border-0">
+                        <a class="nav-link text-uppercase text-dark" href="#popular">popular</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- header -->
+    <header id="header" class="vh-100 carousel slide" data-bs-ride="carousel" style="padding-top: 104px;">
+        <div class="container h-100 d-flex align-items-center carousel-inner">
+            <div class="text-center carousel-item active">
+                <h2 class="text-capitalize text-dark">best product</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-dark">Healthy Skin</h1>
+                <a href="#" class="btn mt-3 text-uppercase">shop now</a>
+            </div>
+            <div class="text-center carousel-item">
+                <h2 class="text-capitalize text-dark">best price & offer</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-dark">Skin Savings</h1>
+                <a href="#" class="btn mt-3 text-uppercase">buy now</a>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </header>
+    <!-- end of header -->
+
+    <!-- collection -->
+    <section id="collection" class="py-5">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block">New Collection</h2>
+            </div>
+
+            <div class="row g-0">
+                <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type="button" class="btn m-2 text-dark active-filter-btn" data-filter="*">All</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".best">Best Sellers</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".feat">Featured</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".new">New Arrival</button>
+                </div>
+
+                <div class="collection-list mt-4 row gx-0 gy-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class="collection-img position-relative">
+                            <img src="images/Gold serum.jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Serum</p>
+                            <span class="fw-bold">Rp. 200.000,00</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class="collection-img position-relative">
+                            <img src="images/moizturizer.png" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Moisturizer</p>
+                            <span class="fw-bold">Rp. 180.000,00</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class="collection-img position-relative">
+                            <img src="images/masker wajah.png" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Face Mask</p>
+                            <span class="fw-bold">Rp. 150.000,00</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class="collection-img position-relative">
+                            <img src="images/sunsceen.png" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Sunscreen</p>
+                            <span class="fw-bold">Rp. 190.000,00</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class="collection-img position-relative">
+                            <img src="images/toner.png" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Toner</p>
+                            <span class="fw-bold">Rp. 250.000,00</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class="collection-img position-relative">
+                            <img src="images/facial wash.png" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Facial Wash</p>
+                            <span class="fw-bold">Rp. 120.000,00</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class="collection-img position-relative">
+                            <img src="images/masker lip.jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Lip Mask</p>
+                            <span class="fw-bold">Rp. 100.000,00</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class="collection-img position-relative">
+                            <img src="images/micelar.jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Micellar Water</p>
+                            <span class="fw-bold">Rp. 140.000,00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of collection -->
+
+    <!-- special products -->
+    <section id="special" class="py-5">
+        <div class="container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">Special Selection</h2>
+            </div>
+            <div class="special-list row g-0">
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/Hydrating_Skincare.png" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Hydrating Scincare Set</p>
+                        <span class="fw-bold d-block">Rp. 500.000,00</span>
+                        <a href="#" class="btn btn-primary mt-3">Add Cart</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/deep cleansing.jpg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Deep Cleaning Washing</p>
+                        <span class="fw-bold d-block">Rp. 600.000,00</span>
+                        <a href="#" class="btn btn-primary mt-3">Add Cart</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/lip care.jpg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Lip Care</p>
+                        <span class="fw-bold d-block">Rp. 400.000,00</span>
+                        <a href="#" class="btn btn-primary mt-3">Add Cart</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/body care.jpg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Body Care</p>
+                        <span class="fw-bold d-block">Rp. 700.000,00</span>
+                        <a href="#" class="btn btn-primary mt-3">Add Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of special products -->
+
+    <!-- blogs -->
+    <section id="offers" class="py-5">
+        <div class="container">
+            <div
+                class="row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
+                <div class="offers-content">
+                    <span class="text-white">Discount Up To 40%</span>
+                    <h2 class="mt-2 mb-4 text-white">Grand Sale Offer!</h2>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of blogs -->
+
+    <!-- blogs -->
+    <section id="blogs" class="py-5">
+        <div class="container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">Our Latest Blog</h2>
+            </div>
+
+            <div class="row g-3">
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="images/scincare.jpg" alt="">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">7 Easy Steps for a Successful Daily Skincare Routine</h4>
+                        <p class="card-text mt-3 text-muted">In this article, we will discuss the essential steps
+                            required in a daily skincare routine.
+                            This routine includes cleansing the skin, using a toner, applying serum, moisturizing, and
+                            using sunscreen.
+                            By following these steps correctly, you can achieve healthier and more radiant skin without
+                            spending hours
+                            in front of the mirror.</p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <span class="fw-bold">Author:</span> Nenny Maryani
+                            </small>
+                        </p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="images/anti penuaan.jpg" alt="">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">Anti-Aging Skincare: Secrets to Stay Youthful Forever</h4>
+                        <p class="card-text mt-3 text-muted">This article explores the secrets of anti-aging skincare
+                            that can help you maintain
+                            youthful and healthy skin. We will explain effective products for reducing signs of aging,
+                            such as retinol, vitamin C,
+                            and chemical peels. By understanding how these products work and how to use them correctly,
+                            you can preserve skin that
+                            looks youthful and fresh.</p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <span class="fw-bold">Author:</span> Nenny Maryani
+                            </small>
+                        </p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="images/memperhatikan-kesehatan-kulit 2.jpeg" alt="">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">The Gift of Healthy Skin: Success Stories from Our Customers</h4>
+                        <p class="card-text mt-3 text-muted">We'd like to share customer success stories. They've seen
+                            real benefits using our products.
+                            They conquered skin issues like acne, aging, and hyperpigmentation, getting positive
+                            results. Hearing their experiences can
+                            provide insights on how our products can improve your skin and enhance your overall
+                            confidence.</p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <span class="fw-bold">Author:</span> Nenny Maryani
+                            </small>
+                        </p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of blogs -->
+
+    <!-- about us -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row gy-lg-5 align-items-center">
+                <div class="col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class="title pt-3 pb-5">
+                        <h2 class="position-relative d-inline-block ms-4">About Us</h2>
+                    </div>
+                    <p class="lead text-muted">Our skin specialists blend science with beauty. We offer high-quality
+                        products
+                        and personalized care for your natural skin glow. </p>
+                    <p>We're a destination for health, freshness, and radiance. With a collection of top-quality
+                        products and professional skincare services, we strive to meet your unique needs.
+                        At Elegance Esthetics, we understand that beauty is about feeling confident and celebrating
+                        your uniqueness.</p>
+                </div>
+                <div class="col-lg-6 order-lg-0">
+                    <img src="images/ilustrasi bahagai.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of about us -->
+
+    <!-- popular -->
+    <section id="popular" class="py-5">
+        <div class="container">
+            <div class="title text-center pt-3 pb-5">
+                <h2 class="position-relative d-inline-block ms-4">Popular Of Products</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5">Top Rated</h3>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/serum.jpeg" alt="serum" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Serum Hydracare</p>
+                            <span>Rp. 350.000,00</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/toner2.jpg" alt="serum" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Toner Centela</p>
+                            <span>Rp. 400.000,00</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/lip balm.jpg" alt="serum" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Lip Balm</p>
+                            <span>Rp. 150.000,00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5">Best Selling</h3>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/moizturizer2.jpg" alt="serum" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Moisturizer Night</p>
+                            <span>Rp. 360.000,00</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/sunsceen2.jpg" alt="serum" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Sunscreen</p>
+                            <span>Rp. 250.000,00</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/lip scrub.jpg" alt="serum" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Lip Scrub</p>
+                            <span>Rp. 180.000,00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5">On Sale</h3>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/body-scrub.jpg" alt="serum" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Body Scrub</p>
+                            <span>Rp. 450.000,00</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/lip serum.jpg" alt="serum" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Lip Serum</p>
+                            <span>Rp. 250.000,00</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/facial cleanser.jpg" alt="serum" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Facial Cleanser</p>
+                            <span>Rp. 240.000,00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of popular -->
+
+    <!-- newsletter -->
+    <section id="newsletter" class="py-5">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="title text-center pt-3 pb-5">
+                    <h2 class="position-relative d-inline-block ms-4">Newsletter Subscription</h2>
+                </div>
+
+                <p class="text-center text-muted">The Best of Beauty, Just One Click Away. Subscribe Now!</p>
+                <div class="input-group mb-3 mt-3">
+                    <input type="text" class="form-control" placeholder="Enter Your Email ...">
+                    <button class="btn btn-primary" type="submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of newsletter -->
+
+    <!-- footer -->
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3 class="brand">Links</h3>
+                        <ul>
+                            <li><a href="#header">Home</a></li>
+                            <li><a href="#collection">Collection</a></li>
+                            <li><a href="#special">Specials</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3 class="brand">About</h3>
+                        <ul>
+                            <li><a href="#blogs">Blogs</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#popular">Popular</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3 class="brand">AestX</h3>
+                        <p>At Elegance Esthetics, we prioritize healthy skin and natural beauty. We are the keepers of the secret behind captivating skin radiance. With the finest collection of skincare products we offer, you can unlock your skin's true potential.</p>
+                    </div>
+                    <div class="col item social">
+                        <a href="https://www.facebook.com/nenny.maryani.12"><i class = "fab fa-facebook-f"></i></a>
+                        <a href="#"><i class = "fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/the.nn_y?igshid=OGQ5ZDc2ODk2ZA=="><i class = "fab fa-instagram"></i></a>
+                        <a href="https://github.com/NennyMaryani"> <i class = "fab fa-github"></i></a></div>
+                </div>
+                <p class="copyright">AestX © 2023</p>
+            </div>
+        </footer>
+    </div>
+    <!-- end of footer -->
+   
+    <!-- jquery -->
+    <script src="js/jquery-3.7.1.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+</body>
+</html>
